@@ -46,7 +46,7 @@ const Registerform = () => {
         fingerprint_img,
       };
       const response = await axios.post(
-        "http://localhost:8000/api/user/register",
+        "https://fingerprint-backend.vercel.app/api/user/register",
         data
       );
       console.log("resons", response);

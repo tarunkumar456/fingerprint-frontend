@@ -27,7 +27,7 @@ const sumbitprofile = async() =>{
         fingerprint_img,
       };
         const response = await axios.patch(
-          `http://localhost:8000/api/user/${tokenvalue[0]._id}`,
+          `https://fingerprint-backend.vercel.app/api/user/${tokenvalue[0]._id}`,
           data
         );
         console.log("resons", response);
